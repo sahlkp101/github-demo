@@ -2,6 +2,19 @@ git - github -> version controller - undo chages - go back to previous state for
 git - track changes in files in any folder key hash and value as content you can use locally - special file system
 github - repository hosting service make git distributed 
 
+git init -> initialize git repository .git
+git status
+git add .
+git add <filename>
+git commit -m "files added"
+git restore --staged <filename>
+git log
+git reset <hash>
+git stash
+git stash pop
+git stash clear
+git remote add origin <url>
+git remote -v
 
 
 
@@ -28,19 +41,13 @@ github - repository hosting service make git distributed
 
 
 
-
-
-
-
-
-
-
+deep ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 objects type -> blobs - stores files ,trees - information about directories ,commits - store versions of project ,anotated text - 
 
 
 
-git init ->initialize git repository .git
+
 
 
 echo "hello git" | git hash-object --stdin -w
