@@ -1,0 +1,106 @@
+git - github -> version controller - undo chages - go back to previous state for every file
+git - track changes in files in any folder key hash and value as content you can use locally - special file system
+github - repository hosting service make git distributed 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+objects type -> blobs - stores files ,trees - information about directories ,commits - store versions of project ,anotated text - 
+
+
+
+git init ->initialize git repository .git
+
+
+echo "hello git" | git hash-object --stdin -w
+echo - "blob 10\0hello git" | shasum
+git hash-object <filename> -w
+hash - first two letters folder,other letters filename 
+sha1 hashing is used
+
+
+git cat-file -p <hash>
+git cat-file -s <hash>
+git cat-file -t <hash>
+git mktree
+
+git object - objecttype objectlength delimeter contents eg:- blob <size>\0content
+
+git tree object - permission objecttype sha1hash nameoffolder/file 
+
+permission:-
+	040000 directory
+	100644 regular non-executable file 
+	100664 regular non-executable group writable file 
+	100755 regular executable file 
+	120000 symbolic link
+	160000 gitlink
+
+cat file.txt | git mktree
+100644 blob 8d0e41234f24b6da002d962a26c2495ea16a425f    file1.txt
+100644 blob 64a3e7f748c65dba4aac154c68a6049ea8105f80    file2.txt
+
+working directory ,staging area, git repository
+
+git read-tree 44e3
+git ls-files -s 
+git checkout-index -a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
