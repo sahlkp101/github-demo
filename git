@@ -1,8 +1,8 @@
-git - github -> version controller - undo chages - go back to previous state for every file
+git - github -> version controller - undo changes - go back to previous state for every file
 git - track changes in files in any folder key hash and value as content you can use locally - special file system
 github - repository hosting service make git distributed 
 
-git init -> initialize git repository .git
+git init
 git status
 git add .
 git add <filename>
@@ -13,14 +13,15 @@ git reset <hash>
 git stash
 git stash pop
 git stash clear
-git remote add origin <url>
+git remote set-url origin git@github.com:username/reponame.git
 git remote -v
-
-
-
-
-
-
+git branch newBranch
+git checkout newBranch
+git merge newBranch
+git push origin master
+git clone <url>
+fork
+git remote add upstream <url>
 
 
 
